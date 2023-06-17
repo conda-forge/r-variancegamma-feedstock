@@ -1,11 +1,11 @@
-About r-variancegamma
-=====================
+About r-variancegamma-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-variancegamma-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=VarianceGamma
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-variancegamma-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides functions for the variance gamma distribution. Density, distribution and quantile functions. Functions for random number generation and fitting of the variance gamma to data. Also, functions for computing moments of the variance gamma distribution of any order about any location. In addition, there are functions for checking the validity of parameters and to interchange different sets of parameterizations for the variance gamma distribution.
 
