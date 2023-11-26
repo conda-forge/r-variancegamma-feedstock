@@ -1,4 +1,4 @@
-{% set version = '0.4-0' %}
+{% set version = "0.4-2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/VarianceGamma_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/VarianceGamma/VarianceGamma_{{ version }}.tar.gz
-  sha256: 3722cb111fb59924e27017be475a73f69d481128c892aebe695103ebbaaf7b58
+  sha256: 5e185c2fb80f503c8e0ac110d03f4e749aeaf4f42e1d2e59d4aab2f350e61fc6
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -41,12 +41,8 @@ test:
 about:
   home: https://CRAN.R-project.org/package=VarianceGamma
   license: GPL-2.0-or-later
-  summary: Provides functions for the variance gamma distribution. Density, distribution and
-    quantile functions. Functions for random number generation and fitting of the variance
-    gamma to data. Also, functions for computing moments of the variance gamma distribution
-    of any order about any location. In addition, there are functions for checking the
-    validity of parameters and to interchange different sets of parameterizations for
-    the variance gamma distribution.
+  summary: Provides functions for the variance gamma distribution. Density, distribution and quantile functions. Functions for random number generation and fitting of the variance gamma to data. Also, functions for computing moments of the variance gamma distribution of any order about any location. In addition, there are
+    functions for checking the validity of parameters and to interchange different sets of parameterizations for the variance gamma distribution.
   license_family: GPL2
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
